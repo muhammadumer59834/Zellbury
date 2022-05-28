@@ -1,4 +1,11 @@
+body{
+  zoom: 90%;
+}
 @media screen and (max-width: 480px) {
+ 
+  .alien{
+    display: none;
+  }
   .over {
     margin-top: 40%;
   }
@@ -128,6 +135,9 @@ small {
     background-color: #FFFFFF;
     padding: 30px 20px 10px 30px;
     margin-top: 30px;
+  }
+  .alien-2{
+    display: none;
   }
 
 }
@@ -307,4 +317,7 @@ input:checked+.slider:before {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+.ghq{
+  font-size: 10px !important;
 }

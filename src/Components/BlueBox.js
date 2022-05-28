@@ -1,11 +1,11 @@
 
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
-import Loader from "./Loader";
-// const url = 'https://mocki.io/v1/e49c833c-e403-4e34-ae85-9a025c9ae4d2';
+// import Loader from "./Loader";
+
 const BlueBox = () => {
-    const [data, setData] = useState();
-    const [loading, setLoading] = useState(true);
+    // const [data, setData] = useState();
+    // const [loading, setLoading] = useState(true);
 
 
     const [todaySale, setTodaySale] = useState("");

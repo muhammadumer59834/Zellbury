@@ -44,7 +44,7 @@ function Main() {
 
 
     useEffect(() => {
-       
+
         const sessonOver = () => {
             setTimeout(() => {
                 navigate('/Form');
@@ -63,7 +63,7 @@ function Main() {
                 {/* {/* Site wrapper  */}
                 <div className="wrapper">
 
-                    
+
                     <header className="main-header">
                         {/* Logo  */}
                         <a href="../index.html" className="logo">
@@ -81,16 +81,21 @@ function Main() {
                         {/* Header Navbar  */}
                         <nav className="navbar navbar-static-top">
                             {/* Sidebar toggle button */}
-                            <div>
+                            <div className="alien">
                                 <a href="#" className="sidebar-toggle" data-toggle="push-menu" role="button">
+                                    <i className="ti-align-left"></i>
+                                </a>
+                            </div>
+                            <div className="alien-2">
+                                <a href="#" className="sidebar-toggle" role="button">
                                     <i className="ti-align-left"></i>
                                 </a>
                             </div>
 
                             <div className="navbar-custom-menu r-side">
-                                <ul className="nav navbar-nav">
+                                <ul className="nav navbar-nav" >
                                     {/* Messages  */}
-                                    <li className="dropdown messages-menu">
+                                    <li className="dropdown messages-menu" >
                                         <a href="#" className="dropdown-toggle" data-toggle="dropdown">
 
                                         </a>
@@ -171,6 +176,13 @@ function Main() {
                                                     </svg></a></div>
                                             </li>
                                         </ul>
+                                    </li>
+                                    {/* gtech logo */}
+                                    <li className="dropdown user user-menu alien">
+
+                                        <div style={{ marginTop: '20px', marginLeft: '10px' }}>
+                                            <img src={gtech} width="70px" alt="logo" />
+                                        </div>
                                     </li>
                                     {/* Control Sidebar Toggle Button  */}
                                     <li>
