@@ -171,7 +171,7 @@ function Summary() {
                                 <thead >
                                     <tr className="bg-inverse" style={{ fontWeight: 800 }}>
                                         <th className="bb-2 bg-inverse text-center mg">Description</th>
-                                        <th className="bb-2 bg-inverse text-center mg">&nbsp;&nbsp;Gross Sale&nbsp;</th>
+                                        <th className="bb-2 bg-inverse text-center mg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gross Sale&nbsp;</th>
                                         <th className="bb-2 bg-inverse text-center mg">&nbsp;&nbsp;Net Sale&nbsp;&nbsp;</th>
                                         <th className="bb-2 bg-inverse text-center mg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Qty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
                                         <th className="bb-2 bg-inverse text-center mg">&nbsp;&nbsp;&nbsp;Discount&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
@@ -297,14 +297,16 @@ function Summary() {
                                                 ChartDatePrevious,
                                                 ChartDate 
                                             ],
-                                            colors: ["#77AFF9", "#3EB489"],
+                                            fill: {
+                                                colors: ['#F44336', '#E91E63']
+                                              },
                                         },
 
                                         yaxis: {
                                             labels: {
 
                                                 formatter: (val) => {
-                                                    return `${val}`;
+                                                    return `${val.toLocaleString()}`;
                                                 },
 
                                                 style: { fontSize: "15", colors: ["black"] },
@@ -319,7 +321,7 @@ function Summary() {
 
                                         dataLabels: {
                                             formatter: (val) => {
-                                                return `${val}`;
+                                                return `${val.toLocaleString()}`;
                                             },
                                             style: {
                                                 colors: ["#f4f4f4"],
